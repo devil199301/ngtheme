@@ -16,5 +16,9 @@ export class NavigationComponent {
     );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
-
+  switchTheme(arg) {
+    console.log(document.querySelector('link.app-theme').getAttribute('href'));
+     const theme = `assets/custom-${arg}.css`;
+     document.querySelector('link.app-theme').setAttribute('href', theme);
+  }
 }

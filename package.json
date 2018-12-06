@@ -4,11 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --outputPath dist --base-href https://github.com/devil199301/ngtheme/",
+    "build": "ng build --prod --outputPath dist --base-href https://devil199301.github.io/ngtheme/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "build-themes": "node scripts/build-themes.js"
   },
   "private": true,
   "dependencies": {
